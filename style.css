@@ -77,10 +77,46 @@ main #text-main {
 
 main #picture-main {
     width: 50%;
-    
+
     display: flex;
     justify-content: center;
 }
+
+@media only screen and (max-width: 800px) {
+    main #picture-main {
+        width: 50%;
+    
+        display: none;
+        justify-content: center;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        justify-content: stretch;
+        align-items: stretch;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+
+    #navbar a{
+        display: block;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        background-color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 1.1em;
+        color: black;
+        padding: 5px 0px;
+    }
+  }
 
 #picture-main img{
     width: auto;
@@ -161,10 +197,9 @@ footer .form-parent {
 
 #sosmed-ico .fa {
     font-size: 50px;
-    width: 100px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 5px 25px;
     color: black;
   }
 
