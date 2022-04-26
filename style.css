@@ -6,7 +6,6 @@
 }
 
 body {
-    margin: 100px 0 0;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -15,7 +14,6 @@ body {
     background-color: rgb(255, 255, 255);
     justify-content: center;
     align-items: stretch;
-    height: 100px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -28,7 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    height: 100px   ;
     background-color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 1.1em;
@@ -42,12 +40,22 @@ body {
 }
 
 main {
-    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8e8e8;
+    padding: 100px 0 0;
+    
+}
+
+/* Home Page */
+
+main #home1 {
     display: flex;
     justify-content: center;
-    align-items: stretch;
-    height: 610px;
-    background-color: #e8e8e8;
+    height: 620px;
+
 }
 
 main #text-main {
@@ -82,13 +90,101 @@ main #picture-main {
     justify-content: center;
 }
 
+#picture-main img{
+    width: auto;
+    height: 100%;
+}
+
+/* Personal Page */
+
+main #personal-1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #d6d6d6;
+}
+
+main #personal-1 #p1-pic {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #personal-1 #p1-pic img{
+    width: 90%;
+    height: auto;
+
+
+}
+
+main #personal-1 #p1-text {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px 50px 80px;
+    width: 70%;
+    border-bottom-left-radius: 100px;
+    background-color: #e8e8e8;
+    text-align: justify;
+
+}
+
+main #personal-1 #p1-text .p1-text-isi {
+    margin-bottom: 30px;
+}
+
+
 @media only screen and (max-width: 700px) {
+
+
+    /* Home Page */
     main #picture-main {
         width: 50%;
     
         display: none;
         justify-content: center;
     }
+
+    /* Personal Page */
+
+    main #personal-1 {
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #d6d6d6;
+    }
+
+    main #personal-1 #p1-pic {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        background-color: #e8e8e8;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        align-items: center;
+    }
+
+    main #personal-1 #p1-pic img{
+        width: 50%;
+        height: auto;
+    }
+
+    main #personal-1 #p1-text {
+        height: 100%;
+        border-bottom-left-radius: 100px;
+        background-color: #d6d6d6;
+        text-align: justify;
+        padding: 20px 2px;
+    }
+    
+
+
+    /* Navbar */
 
     #navbar {
         display: flex;
@@ -117,11 +213,6 @@ main #picture-main {
         padding: 5px 0px;
     }
   }
-
-#picture-main img{
-    width: auto;
-    height: 100%;
-}
 
 footer {
     padding-top: 60px;
