@@ -97,7 +97,7 @@ main #picture-main {
         justify-content: stretch;
         align-items: stretch;
         height: 100px;
-        position: fixed;
+        position: absolute;
         top: 0;
         width: 100%;
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
