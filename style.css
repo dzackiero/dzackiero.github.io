@@ -292,6 +292,8 @@ footer .form-parent {
 
 #sosmed-ico .fa:hover {
     color: #7d7d7d;
+    font-size: 11vmin;
+    transition: 0.5s;
 }
 
 footer #cpr {
