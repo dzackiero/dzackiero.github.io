@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    padding-top: 100px;
 }
 
 #navbar {
@@ -15,10 +16,19 @@ body {
     justify-content: center;
     align-items: stretch;
     position: fixed;
+    animation-name: nav-ani;
+    animation-duration: 0.8s;
+    transform-origin: top;
     top: 0;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+
+@keyframes nav-ani {
+    from {transform: scale(1,0);}
+    to {transform: scale(1,1);}
+}
+
 
 #navbar a{
     display: block;
@@ -26,7 +36,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px   ;
+    height: 100px;
     background-color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 1.1em;
@@ -45,7 +55,6 @@ main {
     justify-content: center;
     align-items: center;
     background-color: #e8e8e8;
-    padding: 100px 0 0;
     
 }
 
@@ -91,8 +100,8 @@ main #picture-main {
 }
 
 #picture-main img{
-    width: auto;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* Personal Page */
@@ -134,6 +143,25 @@ main #personal-1 #p1-text .p1-text-isi {
     margin-bottom: 30px;
 }
 
+/* Hobby Page */
+
+main #hobby-1 {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+main #hobby-1 img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+main #hobby-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+}
 
 @media only screen and (max-width: 700px) {
 
@@ -147,7 +175,6 @@ main #personal-1 #p1-text .p1-text-isi {
     }
 
     /* Personal Page */
-
     main #personal-1 {
         padding-top: 60px;
         display: flex;
@@ -183,7 +210,6 @@ main #personal-1 #p1-text .p1-text-isi {
     }
 
     /* Navbar */
-
     #navbar {
         display: flex;
         flex-direction: column;
