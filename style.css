@@ -170,7 +170,7 @@ main #personal-1 #p1-text .p1-text-isi {
     }
 
     main #personal-1 #p1-pic img{
-        width: 50%;
+        width: 80%;
         height: auto;
     }
 
@@ -181,8 +181,6 @@ main #personal-1 #p1-text .p1-text-isi {
         text-align: justify;
         padding: 20px 2px;
     }
-    
-
 
     /* Navbar */
 
