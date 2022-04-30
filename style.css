@@ -206,6 +206,13 @@ main #hobby-4 .frame-mobile {
     display: none;
 }
 
+main #friends-1 {
+    width: 100%;
+}
+
+main #friends-1 img {
+    width: 100%;
+}
 
 
 @media only screen and (max-width: 1200px) {
