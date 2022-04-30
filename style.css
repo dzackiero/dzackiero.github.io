@@ -214,6 +214,14 @@ main #friends-1 img {
     width: 100%;
 }
 
+main #friends-1 #hobby-pc {
+    display: block;
+}
+
+main #friends-1 #hobby-mobile {
+    display: none;
+}
+
 
 @media only screen and (max-width: 1200px) {
     main #hobby-4 {
@@ -304,6 +312,16 @@ main #friends-1 img {
 
     main #hobby-4 .frame-mobile {
         margin-bottom: 20px;
+        display: block;
+    }
+
+    /* Friends Page */
+
+    main #friends-1 #hobby-pc {
+        display: none;
+    }
+    
+    main #friends-1 #hobby-mobile {
         display: block;
     }
 
