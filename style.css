@@ -189,7 +189,7 @@ main #hobby-3 .hobi {
 }
 
 main #hobby-3 .hobi svg {
-    height: 14vmin;
+    height: 100px;
     padding-bottom: 20px;
     width: auto;
 }
@@ -283,11 +283,12 @@ main #hobby-4 .frame-mobile {
         display: none;
     }
 
-    main #hobby-4 {
+    main #hobby-3 {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 30px;
+    }
+
+    main #hobby-3 * {
+        padding-bottom: 18px;
     }
 
     main #hobby-4 .frame-pc {
