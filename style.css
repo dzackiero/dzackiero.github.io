@@ -206,6 +206,8 @@ main #hobby-4 .frame-mobile {
     display: none;
 }
 
+/* Friends Page */
+
 main #friends-1 {
     width: 100%;
 }
@@ -214,12 +216,45 @@ main #friends-1 img {
     width: 100%;
 }
 
-main #friends-1 #hobby-pc {
-    display: block;
-}
-
 main #friends-1 #hobby-mobile {
     display: none;
+}
+
+/* Family Page */
+
+main #family-1 {
+    width: 100%;
+    height: auto;
+}
+
+main #family-1 img {
+    width: 100%;
+}
+
+main #family-2 {
+    padding: 30px 0 60px 0;
+    font-size: 1.2em;
+}
+
+main .split {
+    display: flex;
+}
+
+main .split div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+main .split div img {
+    width: 75%;
+    transition: transform .3s;
+}
+
+main .split div img:hover {
+    transform: scale(1.2);
 }
 
 
@@ -230,8 +265,6 @@ main #friends-1 #hobby-mobile {
         align-items: center;
     }
 }
-
-
 
 @media only screen and (max-width: 700px) {
 
@@ -323,6 +356,17 @@ main #friends-1 #hobby-mobile {
     
     main #friends-1 #hobby-mobile {
         display: block;
+    }
+
+    /* Family Page */
+    main .split {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .split div img {
+        width: 100%;
     }
 
     /* Navbar */
