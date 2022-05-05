@@ -17,19 +17,19 @@ body {
     align-items: stretch;
     position: fixed;
     animation-name: nav-ani;
-    animation-duration: 0.8s;
+    animation-duration: 0.5s;
     transform-origin: top;
     animation-timing-function: ease-out;
     top: 0;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    z-index: 1;
 }
 
 @keyframes nav-ani {
     from {transform: scale(1,0);}
     to {transform: scale(1,1);}
 }
-
 
 #navbar a{
     display: block;
@@ -38,6 +38,7 @@ body {
     align-items: center;
     height: 100px;
     background-color: rgb(255, 255, 255);
+
     text-decoration: none;
     font-size: 1.1em;
     color: black;
@@ -46,6 +47,7 @@ body {
 
 #navbar a:hover {
     font-size: 1.2em;
+    transition: font-size 0.3s;
     background-color: #f0eeee;
 }
 
@@ -58,7 +60,7 @@ main {
     align-items: center;
     background-color: #e8e8e8;
     animation-name: nav-ani;
-    animation-duration: 0.8s;
+    animation-duration: 0.5s;
     animation-timing-function: ease-out;
 
     transform-origin: bottom;
@@ -413,7 +415,7 @@ main .split div img:hover {
         color: black;
         padding: 5px 0px;
     }
-  }
+}
 
 footer {
     padding-top: 60px;
@@ -491,7 +493,7 @@ footer .form-parent {
     text-decoration: none;
     margin: 5px 2.5vmin;
     color: black;
-  }
+}
 
 #sosmed-ico .fa:hover {
     color: #7d7d7d;
