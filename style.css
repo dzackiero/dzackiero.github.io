@@ -11,19 +11,22 @@ body {
 }
 
 #navbar {
+    width: 100%;
+    z-index: 1;
+    
     display: flex;
-    background-color: rgb(255, 255, 255);
     justify-content: center;
-    align-items: stretch;
+    
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
     position: fixed;
+    top: 0;
+    
     animation-name: nav-ani;
     animation-duration: 0.5s;
+    animation-timing-function: ease-in;
     transform-origin: top;
-    animation-timing-function: ease-out;
-    top: 0;
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    z-index: 1;
 }
 
 @keyframes nav-ani {
@@ -32,52 +35,52 @@ body {
 }
 
 #navbar a{
-    display: block;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+
     background-color: rgb(255, 255, 255);
+    height: 100px;
+    padding: 0 30px;
 
     text-decoration: none;
     font-size: 1.1em;
     color: black;
-    padding: 0 30px;
 }
 
 #navbar a:hover {
-    font-size: 1.2em;
-    transition: font-size 0.3s;
     background-color: #f0eeee;
+    font-size: 1.2em;
+    
+    transition: font-size 0.3s;
+
 }
 
 main {
+    background-color: #e8e8e8;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    animation-name: ani-main;
-    animation-duration: 1.2s;
     align-items: center;
-    background-color: #e8e8e8;
+
     animation-name: nav-ani;
     animation-duration: 0.5s;
-    animation-timing-function: ease-out;
-
+    animation-timing-function: ease-in;
     transform-origin: bottom;
+    
 }
 
 /* Home Page */
 
 main #home1 {
     display: flex;
-    overflow: hidden;
-    justify-content: center;
     width: 100%;
-
 }
 
 main #text-main {
     width: 50%;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,19 +101,18 @@ main #text-main {
 
 #text-main #judul a:hover {
     color: rgb(73, 73, 73);
-
 }
 
 main #picture-main {
     width: 50%;
-    height: auto;
+
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 #picture-main img{
-    max-width: fit-content;
-    max-height: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Personal Page */
@@ -118,6 +120,7 @@ main #picture-main {
 main #personal-1 {
     display: flex;
     justify-content: center;
+
     width: 100%;
     background-color: #d6d6d6;
 }
@@ -125,6 +128,7 @@ main #personal-1 {
 main #personal-1 #p1-pic {
     width: 40%;
     height: auto;
+
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -133,17 +137,17 @@ main #personal-1 #p1-pic {
 main #personal-1 #p1-pic img{
     width: 90%;
     height: auto;
-
-
 }
 
 main #personal-1 #p1-text {
     display: flex;
     flex-direction: column;
+
+    background-color: #e8e8e8;
+    border-bottom-left-radius: 100px;
     padding: 30px 40px 50px 80px;
     width: 60%;
-    border-bottom-left-radius: 100px;
-    background-color: #e8e8e8;
+
     text-align: justify;
     font-size: 1.2vmax;
 
@@ -163,13 +167,13 @@ main #hobby-1 {
 main #hobby-1 #hobby-pic-pc {
     display: block;
     max-width: 100%;
-    max-height: 100%;
+    height: auto;
 }
 
 main #hobby-1 #hobby-pic-mobile {
     display: none;
     max-width: 100%;
-    max-height: 100%;
+    height: auto;
 }
 
 main #hobby-2 {
@@ -185,8 +189,6 @@ main #hobby-3 {
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 30px;
-
-    
 }
 
 main #hobby-3 .hobi {
@@ -283,42 +285,31 @@ main .split div img:hover {
         margin-top: 50px;
     }
 
+    /* Home Page */
+
     main #home1 {
         display: flex;
-        overflow: hidden;
         justify-content: center;
-        width: 100%;
         height: 620px;
     }
 
-    /* Home Page */
     main #picture-main {
-        width: 50%;
-    
         display: none;
-        justify-content: center;
     }
 
     /* Personal Page */
     main #personal-1 {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        width: 100%;
-        background-color: #d6d6d6;
     }
 
     main #personal-1 #p1-pic {
+        background-color: #e8e8e8;
         padding-top: 20px;
         width: 100%;
-        height: 50%;
-        display: flex;
-        justify-content: center;
-        background-color: #e8e8e8;
+
         border-bottom-left-radius: 50px;
         border-bottom-right-radius: 50px;
-        align-items: center;
     }
 
     main #personal-1 #p1-pic img{
@@ -327,13 +318,9 @@ main .split div img:hover {
     }
 
     main #personal-1 #p1-text {
-        height: 100%;
-        border-bottom-left-radius: 100px;
         background-color: #d6d6d6;
-        text-align: justify;
         padding: 20px 2px;
         font-size: 2.8vmin;
-
     }
 
     /* Hobby Page */
@@ -390,29 +377,13 @@ main .split div img:hover {
 
     /* Navbar */
     #navbar {
-        display: flex;
         flex-direction: column;
-        background-color: rgb(255, 255, 255);
+        position: absolutez;
         justify-content: stretch;
-        align-items: stretch;
         height: 100px;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
 
     #navbar a{
-        display: block;
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        background-color: rgb(255, 255, 255);
-        text-decoration: none;
-        font-size: 1.1em;
-        color: black;
         padding: 5px 0px;
     }
 }
@@ -433,7 +404,6 @@ footer #contact-me {
 footer .form-parent {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     width: 70%;
     padding-bottom: 60px;
 }
@@ -456,7 +426,6 @@ footer .form-parent {
 .form-parent .form:focus{
     border: none;
     border-bottom: 2px solid #797979;
-
 }
 
 .form-parent #form-button {
