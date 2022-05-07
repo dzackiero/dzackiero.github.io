@@ -378,7 +378,7 @@ main .split div img:hover {
     /* Navbar */
     #navbar {
         flex-direction: column;
-        position: absolutez;
+        position: absolute;
         justify-content: stretch;
         height: 100px;
     }
