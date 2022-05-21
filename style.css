@@ -42,7 +42,7 @@ body {
     background-color: rgb(255, 255, 255);
     height: 100px;
     padding: 0 30px;
-
+    transition: font-size 0.3s;
     text-decoration: none;
     font-size: 1.1em;
     color: black;
@@ -52,7 +52,6 @@ body {
     background-color: #f0eeee;
     font-size: 1.2em;
     
-    transition: font-size 0.3s;
 
 }
 
@@ -462,12 +461,12 @@ footer .form-parent {
     text-decoration: none;
     margin: 5px 2.5vmin;
     color: black;
+    transition: 0.5s;
 }
 
 #sosmed-ico .fa:hover {
     color: #7d7d7d;
     font-size: 11vmin;
-    transition: 0.5s;
 }
 
 footer #cpr {
